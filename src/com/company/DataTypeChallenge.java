@@ -1,28 +1,29 @@
 /*
         Jeannette Yang's pseudocode and code
         6/16/2020
-        Create Scanner
+        Create Scanner and printf import
+        Create input scanner
+        Scanner input = new Scanner(System.in);
         Declare variables
         int i = 4;
         double d = 4.0;
         String s = "Greenhill”;
-        Create input scanner
-        Scanner input = new Scanner(System.in);
-        Ask user to type
-        A int
-        A double
-        Fill in the rest of the sentence “Greenhill”:
+        Ask user to type as a input
+        - A int
+        - A double
+        - Fill in the rest of the sentence “Greenhill”:
         Do this by making println for the output
         Create variable for each input
-        i2
-        d2
-        s2
+        - i2
+        - d2
+        - s2
         Add the sums of input and variables together
         Create a variable that is the sum of each variable
-        iSum
-        dSum
-        sSum
-        System.out.printf(iSum \n dSum \n sSum);
+        - iSum
+        - dSum
+        - sSum
+        Print the sums with printf
+            make it all one line of print using \n and %
 
  */
 package com.company;
@@ -45,6 +46,5 @@ public class DataTypeChallenge {
         double dSum = (d + d2);
         String sSum = s + s2;
         System.out.printf("Your integer sum is %d \nYour double sum is %.1f \nYour sentence is %s",iSum,dSum,sSum);
-
     }
 }
