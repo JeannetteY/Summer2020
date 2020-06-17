@@ -2,6 +2,7 @@ package com.company;
 import java.util.*;
 public class NumberAndThings {
     public static void main(String []args) {
+
         Scanner input = new Scanner(System.in);
         double doubly1 = 45.98;
         double doubly2 = Math.sqrt(doubly1);

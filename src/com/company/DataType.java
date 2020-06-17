@@ -24,17 +24,19 @@
         - sSum
         Print the sums with printf
             make it all one line of print using \n and %
-
  */
 package com.company;
-
-import java.util.*;
-public class DataTypeChallenge {
+import java.util.*; //import for scanner and printf
+public class DataType {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        //constant pre-defined variables
         int i = 4;
         double d = 4.0;
         String s = "Greenhill ";
+
+        //System prints a message and the user responds
         System.out.println("Please type an integer");
         int i2 = input.nextInt();
         System.out.println("Please type an double");
@@ -42,9 +44,15 @@ public class DataTypeChallenge {
         input = new Scanner(System.in);
         System.out.println("Fill in the rest of the sentence Greenhill:");
         String s2 = input.nextLine();
-        int iSum = (i + i2);
-        double dSum = (d + d2);
+
+        //These are the sums of the constants and the inputs
+        int iSum = i + i2;
+        double dSum = d + d2;
         String sSum = s + s2;
-        System.out.printf("Your integer sum is %d \nYour double sum is %.1f \nYour sentence is %s",iSum,dSum,sSum);
+
+        //printing the results all in one line
+        System.out.printf("%d \n%.1f \n%s",iSum,dSum,sSum);
+
+
     }
 }
