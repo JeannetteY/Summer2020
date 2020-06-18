@@ -17,22 +17,27 @@ package com.company;
 import java.util.Scanner;
 public class Operators {
     public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-    //asking the user for inputs
-    System.out.println("How much does your meal cost? ");
-    double mealCost = input.nextDouble();
-    System.out.println("What is the tip percent? ");
-    int tipPercent = input.nextInt();
-    System.out.println("What is the tax percent? ");
-    int taxPercent = input.nextInt();
+        //asking the user for inputs
+        System.out.println("How much does your meal cost? ");
+        double mealCost = input.nextDouble();
+        System.out.println("What is the tip percent? ");
+        int tipPercent = input.nextInt();
+        System.out.println("What is the tax percent? ");
+        int taxPercent = input.nextInt();
 
-        //calculations of percentages
-        double tip = ((double)tipPercent/(double)100) *mealCost;
-        double tax = ((double)taxPercent/(double)100) *mealCost;
-        double totalCost = (mealCost + tip + tax);
-
-        //Final print with the rounding in the line
-        System.out.println(Math.round(totalCost));
+        //calling the method
+        solve(mealCost,tipPercent,taxPercent);
     }
-}
+        static void solve (double mealCost, int tipPercent, int taxPercent){
+
+            //calculations of percentages
+            double tip = ((double) tipPercent / (double) 100) * mealCost;
+            double tax = ((double) taxPercent / (double) 100) * mealCost;
+            double totalCost = (mealCost + tip + tax);
+
+            //Final print with the rounding in the line
+            System.out.println(Math.round(totalCost));
+        }
+    }

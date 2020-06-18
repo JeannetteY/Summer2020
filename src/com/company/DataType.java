@@ -52,7 +52,5 @@ public class DataType {
 
         //printing the results all in one line
         System.out.printf("%d \n%.1f \n%s",iSum,dSum,sSum);
-
-
     }
 }
