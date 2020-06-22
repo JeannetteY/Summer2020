@@ -17,7 +17,7 @@ package com.company;
 import java.util.*;
 public class ConditionalStatements {
     public static void main(String[]args) {
-        int n = 0;
+        int n = 0; //this is the random int
         Scanner input = new Scanner(System.in);
         Random ran = new Random();
         String answer;
